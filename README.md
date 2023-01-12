@@ -10,7 +10,9 @@ V2 sürümü ile bir web panosu, prometheus exporter, telegram ve discord bildir
 ## Güncellemeler ile başlıyoruz
 
 
-```sudo apt update && apt upgrade -y && sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential \
-git make ncdu -y && reboot```
+```
+sudo apt update && apt upgrade -y && sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential \
+git make ncdu -y && reboot
+```
 
 Not: Bu komutun sonunda reboot yaptığımız için sunucu yeniden başlatılacak. İşlemlere devam etmek için sunucumuza tekrar bağlanıyoruz.
