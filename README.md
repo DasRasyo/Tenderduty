@@ -49,7 +49,7 @@ Config dosyası içerisinde düzenlememiz gereken yerler var
 
 İlk düzenlememizi aşağıdaki kısımda yapacağız:
 
- # The user-friendly name that will be used for labels. Highly suggest wrappin>
+ The user-friendly name that will be used for labels. Highly suggest wrappin>
   "Osmosis":
     # chain_id is validated for a match when connecting to an RPC endpoint, als>
     chain_id: osmosis-1
