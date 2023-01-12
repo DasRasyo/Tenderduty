@@ -76,7 +76,7 @@ Ağ ayarları ve bildirim ayarları şöyle gözükmeli:
 ![bildirimdurumları](https://user-images.githubusercontent.com/94050636/211959555-738e0f84-b907-4a50-9f35-b796a372c399.png)
 
 
-Şimdi RPC Endpoints kısmını düzenleyeceğiz. (This section covers our RPC providers. No LCD (aka REST) endpoints are used, only TM's RPC endpoints) 
+### Şimdi RPC Endpoints kısmını düzenleyeceğiz. (This section covers our RPC providers. No LCD (aka REST) endpoints are used, only TM's RPC endpoints) 
 
 Bu kısıma RPC endpoint giriyoruz
 Discord'da birçok RPC paylaşıldı, çalışan herhangi bir endpoint girebilirsiniz. Bu örnekte nodejumper RPC endpoint kullanılacak.
