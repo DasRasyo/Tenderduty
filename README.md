@@ -165,6 +165,12 @@ sudo journalctl -u tenderdutyd.service -f
  
  ## Telegram Bot ile Alarm Ekleme
  
- Öncelik bot oluşturacağız. Bunun için @BotFather ile konuşma açıyoruz, başlat diyoruz ve /newbot komutunu giriyoruz. /newbot komutunu girdikten sonra bizden bota isim vermemizi isteyecek. Burada herhangi bir isim verebilirsiniz. Bota isim verdikten sonra bizden bot için kullanıcı adı isteyecek. Bu kullanıcı adı bot ile bitmeli. Örneğin conqueror_celestia_bot 
+ Öncelik bot oluşturacağız. Bunun için @BotFather ile konuşma açıyoruz, başlat diyoruz ve /newbot komutunu giriyoruz. /newbot komutunu girdikten sonra bizden bota isim vermemizi isteyecek. Burada herhangi bir isim verebilirsiniz. Bota isim verdikten sonra bizden bot için kullanıcı adı belirlememizi isteyecek. Bu kullanıcı adı bot ile bitmeli. Örneğin conqueror_celestia_bot 
  
  Bu adımdan sonra bize API key verecek. Bunu kaybetmeyeceğiniz bir yere kaydedin ve kimseyle paylaşmayın. Bu mesajda botumuzun kullanıcı adı da yazıyor. Buradan tıklayarak botumuza herhangi bir mesaj yazıyoruz.
+
+Botumuza mesaj attıktan sonra şu adıma geçiyoruz;
+
+```
+https://api.telegram.org/bot<BOTUNVERDİĞİAPİ>/getUpdates
+```
