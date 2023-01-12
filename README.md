@@ -16,3 +16,50 @@ git make ncdu -y && reboot
 ```
 
 Not: Bu komutun sonunda reboot yaptığımız için sunucu yeniden başlatılacak. İşlemlere devam etmek için sunucumuza tekrar bağlanıyoruz.
+
+## Go kurulumu ile devam ediyoruz
+
+```
+ver="1.19.4"
+cd $HOME
+wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf "go$ver.linux-amd64.tar.gz"
+rm "go$ver.linux-amd64.tar.gz"
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+go version
+```
+go version komutunun çıktısı şu şekilde olmalıdır:
+```
+go version go1.19.4 linux/amd64
+```
+
+## Tenderduty indirip kuruyoruz
+
+```
+cd $HOME
+git clone https://github.com/blockpane/tenderduty
+cd tenderduty
+go install
+cp example-config.yml config.yml
+```
+
+Config dosyası içerisinde düzenlememiz gereken yerler var
+
+İlk düzenlememizi aşağıdaki kısımda yapacağız:
+
+ # The user-friendly name that will be used for labels. Highly suggest wrappin>
+  "Osmosis":
+    # chain_id is validated for a match when connecting to an RPC endpoint, als>
+    chain_id: osmosis-1
+    # Hooray, in v2 we derive the valcons from abci queries so you don't have t>
+    # to convert ed25519 keys to the appropriate bech32 address
+    valoper_address: osmovaloper1xxxxxxx...
+    # Should the monitor revert to using public API endpoints if all supplied R>
+    # This isn't always reliable, not all public nodes have websocket proxying >
+    public_fallback: no
+
+```
+nano config.yml
+```
