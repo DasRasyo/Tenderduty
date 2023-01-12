@@ -191,3 +191,21 @@ Buradaki komutu kendimize göre düzenliyoruz, daha önce kaydettiğimiz API ve 
 Herşey doğru ise bottan mesaj gelmeli
 
 ![bottan gelen mesaj](https://user-images.githubusercontent.com/94050636/211963100-56b2c58f-8acf-4fe0-b22d-dadb0beed105.png)
+
+
+### Şimdi tekrar tenderduty config içerisinde düzenlemeler yaparak botumuzu ekleyeceğiz.
+
+```
+cd $HOME
+cd tenderduty
+nano config.yml
+```
+
+#### Telegram settings kısmına geliyoruz
+
+enabled kısmına yes yazıyoruz
+api_key kısmına botfather'dan alıp kaydettiğimiz API'yi giriyoruz
+channel kısmına ise daha önce kaydettiğimiz chat id'yi giriyoruz.
+
+
+![telegramsettings](https://user-images.githubusercontent.com/94050636/211964604-fdd2a557-e5e7-4de3-b037-a07f68fd99a2.png)
