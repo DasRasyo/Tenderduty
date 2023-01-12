@@ -74,3 +74,20 @@ Osmosis yerine "Celestia" chain_id: kısmına "mocha" ve valoper_address: kısm�
 Ağ ayarları ve bildirim ayarları şöyle gözükmeli:
 
 ![bildirimdurumları](https://user-images.githubusercontent.com/94050636/211959555-738e0f84-b907-4a50-9f35-b796a372c399.png)
+
+
+Şimdi RPC Endpoints kısmını düzenleyeceğiz. (This section covers our RPC providers. No LCD (aka REST) endpoints are used, only TM's RPC endpoints) 
+
+Bu kısıma RPC endpoint giriyoruz
+Discord'da birçok RPC paylaşıldı, çalışan herhangi bir endpoint girebilirsiniz. Bu örnekte nodejumper RPC endpoint kullanılacak.
+https://celestia-testnet.nodejumper.io:443
+İkinci kısma yedek bir endpoint girebilirsiniz. İlk rpc'de sorun olursa sistem otamatik olarak ikinciyi kullanmaya geçer. Bu kısma farklı bir rpc girmeniz tavisye edilir.
+
+![rpcendpoint](https://user-images.githubusercontent.com/94050636/211960286-6bf88169-5c4f-4668-b5ad-5c46273ec701.png)
+
+NOT: Tenderduty'yi Celestia Node'unuzun çalıştığı sunucuya kuruyorsanız localhost olarak kendi node'unuzu kullanabilirsiniz. Bu durumda burada herhangi bir değişiklik yapmanıza gerek yok. Default olarak şöyle olacaktır:
+
+![localhost](https://user-images.githubusercontent.com/94050636/211960425-5d5e69ba-f997-48d5-a214-ffe91fc8f13a.png)
+
+CTRL X Y Enter yaparak kaydedip çıkıyoruz.
+
