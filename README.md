@@ -193,7 +193,7 @@ Herşey doğru ise bottan mesaj gelmeli
 ![bottan gelen mesaj](https://user-images.githubusercontent.com/94050636/211963100-56b2c58f-8acf-4fe0-b22d-dadb0beed105.png)
 
 
-### Şimdi tekrar tenderduty config içerisinde düzenlemeler yaparak botumuzu ekleyeceğiz.
+### Şimdi tekrar Tenderduty config içerisinde düzenlemeler yaparak botumuzu ekleyeceğiz.
 
 ```
 cd $HOME
@@ -209,3 +209,17 @@ channel kısmına ise daha önce kaydettiğimiz chat id'yi giriyoruz.
 
 
 ![telegramsettings](https://user-images.githubusercontent.com/94050636/211964604-fdd2a557-e5e7-4de3-b037-a07f68fd99a2.png)
+
+ctrl x y enter ile kaydedip çıkıyoruz.
+
+#### Tenderdury servise restart atarak işlemlerimizi bitiriyoruz.
+
+```
+sudo systemctl restart tenderdutyd && sudo journalctl -u tenderdutyd.service -f
+```
+
+Bu işlemleri tamamladıktan sonra Celestia validatörümüzde herhangi bir sorun olduğunda, blok kaçırdığımızda Telegram botumuzdan bildirim alacağız.
+
+
+
+![telegram-bilirimleri](https://user-images.githubusercontent.com/94050636/211964949-e6a2adfb-d8f0-43b3-a8c9-6c8d15174ea7.png)
