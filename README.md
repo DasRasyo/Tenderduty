@@ -81,7 +81,7 @@ Ağ ayarları ve bildirim ayarları şöyle gözükmeli:
 Bu kısma RPC endpoint giriyoruz.
 Discord'da birçok RPC paylaşıldı, çalışan herhangi bir endpoint girebilirsiniz. Bu örnekte nodejumper RPC endpoint kullanılacak.
 
-````
+```
 https://celestia-testnet.nodejumper.io:443
 ```
 
