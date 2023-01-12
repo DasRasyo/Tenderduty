@@ -1,2 +1,3 @@
-# Tenderduty
-Tenderduty ile Celestia Validatör Node Takibi
+# Tenderduty ile Celestia Validatör Node Takibi
+
+## Tenderduty Nedir?
