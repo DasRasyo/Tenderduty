@@ -78,7 +78,7 @@ Ağ ayarları ve bildirim ayarları şöyle gözükmeli:
 
 ### Şimdi RPC Endpoints kısmını düzenleyeceğiz. (This section covers our RPC providers. No LCD (aka REST) endpoints are used, only TM's RPC endpoints) 
 
-Bu kısıma RPC endpoint giriyoruz
+Bu kısma RPC endpoint giriyoruz.
 Discord'da birçok RPC paylaşıldı, çalışan herhangi bir endpoint girebilirsiniz. Bu örnekte nodejumper RPC endpoint kullanılacak.
 https://celestia-testnet.nodejumper.io:443
 İkinci kısma yedek bir endpoint girebilirsiniz. İlk rpc'de sorun olursa sistem otamatik olarak ikinciyi kullanmaya geçer. Bu kısma farklı bir rpc girmeniz tavisye edilir.
