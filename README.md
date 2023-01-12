@@ -182,7 +182,7 @@ https://api.telegram.org/bot<BOTUNVERDİĞİAPİ>/getUpdates
 
 Bunu browser ile arattığımızda bize iki satırlık bir sonuç verecek. İkinci satırdaki "chat":{"id":XXXXXX kısmını kopyalayıp kaydediyoruz. Buradaki rakamlar bizim chat id'imiz.
 
-API ve chad id'imizi kaydettik. Şimdi tekrar sunucumuza dönüyoruz. Her şeyin doğru olduğunu kontrol etmek için sunucumuz aracılığıyla bottan kendimize mesaj göndereceğiz.
+API ve chat id'imizi kaydettik. Şimdi tekrar sunucumuza dönüyoruz. Her şeyin doğru olduğunu kontrol etmek için sunucumuz aracılığıyla bottan kendimize mesaj göndereceğiz.
 
 ```
 curl -X POST "https://api.telegram.org/bot<BOTUNVERDİĞİAPİ>/sendMessage" -d "chat_id=<chat_id>&text=Merhaba"
