@@ -89,7 +89,7 @@ https://celestia-testnet.nodejumper.io:443
 
 ![rpcendpoint](https://user-images.githubusercontent.com/94050636/211960286-6bf88169-5c4f-4668-b5ad-5c46273ec701.png)
 
-NOT: Tenderduty'yi Celestia Node'unuzun çalıştığı sunucuya kuruyorsanız localhost olarak kendi node'unuzu kullanabilirsiniz. Bu durumda burada herhangi bir değişiklik yapmanıza gerek yok. Default olarak şöyle olacaktır:
+#### NOT: Tenderduty'yi Celestia Node'unuzun çalıştığı sunucuya kuruyorsanız localhost olarak kendi node'unuzu kullanabilirsiniz. Bu durumda burada herhangi bir değişiklik yapmanıza gerek yok. Default olarak şöyle olacaktır:
 
 ![localhost](https://user-images.githubusercontent.com/94050636/211960425-5d5e69ba-f997-48d5-a214-ffe91fc8f13a.png)
 
