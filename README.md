@@ -49,17 +49,13 @@ Config dosyası içerisinde düzenlememiz gereken yerler var
 
 İlk düzenlememizi aşağıdaki kısımda yapacağız:
 
- The user-friendly name that will be used for labels. Highly suggest wrappin>
+The user-friendly name that will be used for labels. Highly suggest wrappin>
+"Osmosis":
+chain_id is validated for a match when connecting to an RPC endpoint, als>
+chain_id: osmosis-1
+valoper_address: osmovaloper1xxxxxxx...
 
-  "Osmosis":
-    # chain_id is validated for a match when connecting to an RPC endpoint, als>
-    chain_id: osmosis-1
-    # Hooray, in v2 we derive the valcons from abci queries so you don't have t>
-    # to convert ed25519 keys to the appropriate bech32 address
-    valoper_address: osmovaloper1xxxxxxx...
-    # Should the monitor revert to using public API endpoints if all supplied R>
-    # This isn't always reliable, not all public nodes have websocket proxying >
-    public_fallback: no
+
 
 ```
 nano config.yml
