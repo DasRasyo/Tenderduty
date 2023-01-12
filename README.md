@@ -95,3 +95,42 @@ https://celestia-testnet.nodejumper.io:443
 
 CTRL X Y Enter yaparak kaydedip çıkıyoruz.
 
+
+
+## Servis oluşturma
+
+```
+sudo tee /etc/systemd/system/tenderdutyd.service << EOF 
+[Unit] 
+Description=Tenderduty 
+After=network.target 
+ 
+[Service] 
+Type=simple 
+Restart=always 
+RestartSec=5 
+TimeoutSec=180 
+ 
+User=root
+WorkingDirectory=$HOME/tenderduty 
+ExecStart=$(which tenderduty) 
+ 
+# there may be a large number of network connections if a lot of chains 
+LimitNOFILE=infinity 
+ 
+# extra process isolation 
+NoNewPrivileges=true 
+ProtectSystem=strict 
+RestrictSUIDSGID=true 
+LockPersonality=true 
+PrivateUsers=true 
+PrivateDevices=true 
+PrivateTmp=true 
+ 
+[Install] 
+WantedBy=multi-user.target 
+EOF
+```
+
+
+
