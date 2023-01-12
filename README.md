@@ -7,7 +7,7 @@ V2 sürümü ile bir web panosu, prometheus exporter, telegram ve discord bildir
 
 ![Tenderduty ile Celestia Validatör Node Takibi](https://user-images.githubusercontent.com/94050636/211957642-157aa701-4246-43dc-a2a6-ccff85d1eba0.png)
 
-## Güncellemeler ile başlıyoruz
+## Güncellemeler ile Başlıyoruz
 
 
 ```
@@ -17,7 +17,7 @@ git make ncdu -y && reboot
 
 Not: Bu komutun sonunda reboot yaptığımız için sunucu yeniden başlatılacak. İşlemlere devam etmek için sunucumuza tekrar bağlanıyoruz.
 
-## Go kurulumu ile devam ediyoruz
+## Go Kurulumu ile Devam Ediyoruz
 
 ```
 ver="1.19.4"
@@ -35,7 +35,7 @@ go version komutunun çıktısı şu şekilde olmalıdır:
 go version go1.19.4 linux/amd64
 ```
 
-## Tenderduty indirip kuruyoruz
+## Tenderduty İndirip Kuruyoruz
 
 ```
 cd $HOME
@@ -97,7 +97,7 @@ CTRL X Y Enter yaparak kaydedip çıkıyoruz.
 
 
 
-## Servis oluşturma
+## Servis Oluşturma
 
 ```
 sudo tee /etc/systemd/system/tenderdutyd.service << EOF 
@@ -134,3 +134,31 @@ EOF
 
 
 
+## Servisi Başlatalım
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable tenderdutyd
+sudo systemctl start tenderdutyd
+```
+
+
+## Log Kontrolü
+
+```
+sudo journalctl -u tenderdutyd.service -f
+```
+
+### Herşey normalse loglar şu şekilde olmalıdır
+
+![herşeynormalse](https://user-images.githubusercontent.com/94050636/211961751-a6cd1ea7-3783-42d8-9738-cec5a02a1076.png)
+
+
+### Ayrıca herhangi bir browserda http://<sunucuip>:8888 girerek validatörünüzün durumunu görebilirsiniz. Websayfası şu şekilde olmalıdır:
+
+
+![websayfası](https://user-images.githubusercontent.com/94050636/211961910-79bc62d5-e15f-4a12-950e-3fc12b9d49fe.png)
+
+ 
+ 
+ ## Telegram Bot ile Alarm Ekleme
