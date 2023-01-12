@@ -68,6 +68,8 @@ valoper_address: osmovaloper1xxxxxxx...
 
 
 ### Osmosis yerine "Celestia" chain_id: kısmına "mocha" ve valoper_address: kısmına Celestia operatör adresimizi yazıyoruz. Operatör adresinizi explorerda validatörünüzün sayfasında bulabilirsiniz.
+![operator](https://user-images.githubusercontent.com/94050636/212023485-0495c751-b339-4f8b-b2f6-4aa49b5e6723.png)
+
 
 "Controls various alert settings for each chain." Kısmında ne durumlarda bildirim almak istediğinizi ayarlayabilirsiniz.
 
