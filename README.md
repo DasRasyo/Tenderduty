@@ -64,3 +64,11 @@ valoper_address: osmovaloper1xxxxxxx...
 ```
 nano config.yml
 ```
+
+Osmosis yerine "Celestia" chain_id: kısmına "mocha" ve valoper_address: kısmına Celestia operatör adresimizi yazıyoruz. Operatör adresinizi explorerda validatörünüzün sayfasında bulabilirsiniz.
+
+"Controls various alert settings for each chain." Kısmında ne durumlarda bildirim almak istediğinizi ayarlayabilirsiniz.
+
+Ağ ayarları ve bildirim ayarları şöyle gözükmeli
+
+![bildirimdurumları](https://user-images.githubusercontent.com/94050636/211959555-738e0f84-b907-4a50-9f35-b796a372c399.png)
