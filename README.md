@@ -154,11 +154,13 @@ sudo journalctl -u tenderdutyd.service -f
 ![herşeynormalse](https://user-images.githubusercontent.com/94050636/211961751-a6cd1ea7-3783-42d8-9738-cec5a02a1076.png)
 
 
-### Ayrıca herhangi bir browserda http://<sunucuip>:8888 girerek validatörünüzün durumunu görebilirsiniz. Websayfası şu şekilde olmalıdır:
+### Ayrıca herhangi bir browserda http://sunucuip:8888 girerek validatörünüzün durumunu görebilirsiniz. Websayfası şu şekilde olmalıdır:
 
 
 ![websayfası](https://user-images.githubusercontent.com/94050636/211961910-79bc62d5-e15f-4a12-950e-3fc12b9d49fe.png)
 
+ 
+ 
  
  
  ## Telegram Bot ile Alarm Ekleme
