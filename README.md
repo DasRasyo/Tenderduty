@@ -168,9 +168,26 @@ sudo journalctl -u tenderdutyd.service -f
  Öncelik bot oluşturacağız. Bunun için @BotFather ile konuşma açıyoruz, başlat diyoruz ve /newbot komutunu giriyoruz. /newbot komutunu girdikten sonra bizden bota isim vermemizi isteyecek. Burada herhangi bir isim verebilirsiniz. Bota isim verdikten sonra bizden bot için kullanıcı adı belirlememizi isteyecek. Bu kullanıcı adı bot ile bitmeli. Örneğin conqueror_celestia_bot 
  
  Bu adımdan sonra bize API key verecek. Bunu kaybetmeyeceğiniz bir yere kaydedin ve kimseyle paylaşmayın. Bu mesajda botumuzun kullanıcı adı da yazıyor. Buradan tıklayarak botumuza herhangi bir mesaj yazıyoruz.
+ 
+ 
+ ![apibotfather](https://user-images.githubusercontent.com/94050636/211963189-ec959fc4-7529-472a-af41-e6fb05eb2bae.png)
+
+
 
 Botumuza mesaj attıktan sonra şu adıma geçiyoruz;
 
 ```
 https://api.telegram.org/bot<BOTUNVERDİĞİAPİ>/getUpdates
 ```
+
+Bunu browser ile arattığımızda bize iki satırlık bir sonuç verecek. İkinci satırdaki "chat":{"id":XXXXXX kısmını kopyalayıp kaydediyoruz. Buradaki rakamlar bizim chat id'imiz.
+
+API ve chad id'imizi kaydettik. Şimdi tekrar sunucumuza dönüyoruz. Her şeyin doğru olduğunu kontrol etmek için sunucumuz aracılığıyla bottan kendimize mesaj göndereceğiz.
+
+```
+curl -X POST "https://api.telegram.org/bot<BOTUNVERDİĞİAPİ>/sendMessage" -d "chat_id=<chat_id>&text=Merhaba"
+```
+Buradaki komutu kendimize göre düzenliyoruz, daha önce kaydettiğimiz API ve chat_id giriyoruz. 
+Herşey doğru ise bottan mesaj gelmeli
+
+![bottan gelen mesaj](https://user-images.githubusercontent.com/94050636/211963100-56b2c58f-8acf-4fe0-b22d-dadb0beed105.png)
