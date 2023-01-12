@@ -212,7 +212,7 @@ channel kısmına ise daha önce kaydettiğimiz chat id'yi giriyoruz.
 
 ctrl x y enter ile kaydedip çıkıyoruz.
 
-#### Tenderdury servise restart atarak işlemlerimizi bitiriyoruz.
+#### Tenderduty servise restart atarak işlemlerimizi bitiriyoruz.
 
 ```
 sudo systemctl restart tenderdutyd && sudo journalctl -u tenderdutyd.service -f
